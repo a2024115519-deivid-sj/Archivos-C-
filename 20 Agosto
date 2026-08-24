@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float x,y,z,p;
+
+    cout<<"Calcular el promedio de las 3 notas"<<endl<<endl;
+    cout<<"Escriba la nota del 1er Parcial: ";
+    cin>>x;
+    cout<<"Escriba la nota del 2do Parcial: ";
+    cin>>y;
+    cout<<"Escriba la nota del 3er Parcial: ";
+    cin>>z;
+    cout<<endl;
+    
+    p=(x+y+z)/3;
+    cout<<"El promedio de su nota es: "<<p;
+
+
+    return 0;
+}
