@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num,R, Suma=0;
+    do {
+    cout<<"Escriba un número: ";
+    cin >> num;
+    } while (num < 0);
+    while (num > 0) { //porque llega num = 4, por ende num/10 != 0  (4/10 = 0) deja de cumplir y ya no llega al calculo del residuo del 4
+        R = num % 10;
+        Suma = Suma+R;
+        num = num / 10; 
+    }
+    
+    cout << "La suma es: " << Suma;
+    
+    
+    return 0;
+}
